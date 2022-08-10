@@ -1,7 +1,7 @@
 local module = {}
 
 local Plrs = game:GetService("Players")
-local Plr = Plrs.LocalPlayer
+local Plr = Plrs.PlayerAdded:Wait()
 local PlrGui = Plr:WaitForChild("PlayerGui")
 
 local create = Instance.new
